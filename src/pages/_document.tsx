@@ -1,6 +1,4 @@
 import { Html, Head, Main, NextScript } from "next/document";
-import { NextSeo } from 'next-seo';
-import { useRouter } from 'next/router';
 import { AppConfig } from "@/utils/AppConfig";
 
 export default function Document() {

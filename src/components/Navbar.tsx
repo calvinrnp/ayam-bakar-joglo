@@ -38,7 +38,7 @@ const navitems = [
   },
 ];
 
-function classNames(...classes: any[]) {
+function classNames(...classes: unknown[]) {
   return classes.filter(Boolean).join(" ");
 }
 
@@ -133,7 +133,7 @@ export const Navbar = () => {
               <div className="mt-6">
                 <nav className="grid gap-y-8">
                   {navitems.map((item) => (
-                    <Popover.Button>
+                    <Popover.Button key={item.name}>
                       <a
                         key={item.name}
                         href={item.href}
